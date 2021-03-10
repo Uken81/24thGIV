@@ -1,0 +1,503 @@
+/* Shared by all */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container-main {
+    margin: 0% 15%;
+    height: 100%;
+    background: #3E5151;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Navbar */
+
+nav {
+    background-color: rgba(0, 0, 0, 1.0);
+    min-width: 100%;
+    /* transition: background-color 2s;    */
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    line-height: 0rem;
+    transition: line-height 2s;
+}
+
+ul.menu {
+    margin-right: 2.5rem;
+    font-family: 'Rye', cursive;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#link5 a {
+  font-size: 0.9rem;  
+
+}
+
+a:hover {
+    text-decoration: underline;
+    color: burlywood;
+}
+
+.menu li {
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    margin-right: auto;
+    margin-top: 0.25%;
+    transition: margin-right 3s;
+}
+
+.logo img {
+    height: 3.5rem;
+}
+
+#newHome, #newDiscord {
+    display: none;
+}
+
+/* index */
+
+.title {
+    margin-top: 2%;
+    text-align: center;
+    
+}
+
+h1 {
+    color: seagreen;
+    font-size: 6rem;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: underline;
+}
+
+h2 {
+    color: goldenrod;
+    font-size: 5rem;
+    text-shadow: 2px 2px 5px black;
+    text-decoration: underline;    
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.container-top {
+    background-image: url(/images/index2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    border: solid 5px black;
+    border-radius: 0% 25% 0% 25%;
+    margin: 2% 2% 0% 2%;
+}
+
+.reg-description {
+    font-family: 'Special Elite', cursive;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 4rem;
+    color: black;
+    text-shadow: 2px 2px 2px whitesmoke;
+    padding: 4%;
+}
+
+.container-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.container-bottom img {
+    max-height: 300px;
+    border: solid 5px black;
+    border-radius: 50%;
+}
+
+/* Events */
+
+.container-grid {
+    grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+    display: grid;
+    width: 100%;
+    max-height: 1500px;
+    background-image: url(/images/event1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info-box {
+    background-color: rgba(245, 245, 245, 0.7);
+    color: black;
+    text-align: center;
+    margin-top: 5%;
+    padding: 5%;
+    border-radius: 20%;
+}
+
+.info-box p {
+    font-family: 'Special Elite', cursive;
+    font-weight: bolder;
+    text-shadow: 5px 3px 3px grey;
+    font-size: 1.5rem;
+}
+
+#top-left {
+    grid-row: 2 / span 4.5;
+    grid-column: 1 / span 2;
+    margin-left: 15%;
+}
+
+#center {
+    grid-row: 6 / span 1;
+    grid-column: 3 / span 2;
+    margin-bottom: 15%;
+    padding: 4%;
+    border-radius: 0%;
+}
+
+#top-right {
+    grid-row: 2 / span 4.5;
+    grid-column: 5 / span 2;
+    margin-right: 15%;
+}
+
+/* History page */
+
+.text-main-intro {
+    padding: 5% 10% 5% 10%;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    text-shadow: 1px 2px 8px whitesmoke;
+    font-size: 2rem;
+    font-weight: bolder;
+    line-height: 3rem;
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);
+    background: linear-gradient(to left, #2c3e50, #bdc3c7);
+}
+
+.container-history {
+    width: 100%;
+    background-image: url(/images/history5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#image-banner {
+    padding: 5% 5% 0 5%;
+}
+
+.container-history img {
+    width: 90%;
+    padding: 4%;
+    background-color: black;
+    min-height: 250px;
+}
+
+.image-text-frame {
+    margin: 0 10% 2% 10%;
+    border: .5px solid black;
+    background-color: bisque;
+    padding: 1%;
+    text-align: center;
+}
+
+.image-text {
+    font-size: 1.25rem;
+}
+
+.text-main {
+    padding: 2% 10% 2% 10%;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+    color: whitesmoke;
+    text-shadow: 1px 2px 2px black;
+}
+
+/* Pics Page */
+
+.container-pics-vids {
+    background-color: black;
+    padding: 2% 5%;
+}
+
+.container-vids-main {
+    height: auto;
+    min-height: 400px;
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: 2% 4% 0% 0%;   
+}
+
+iframe {
+    min-height: 200px;
+    margin-left: 10%;
+    
+}
+
+#container-vids1 {
+    background-image: url(/images/pics1.jpg);
+    margin-top: 0%;   
+}
+
+#container-vids2 {
+    background-image: url(/images/pics2.jpg);
+    background-size: 70%;
+}
+
+#container-vids3 {
+    background-image: url(/images/pics3.png);
+}
+
+#container-vids4 {
+    background-image: url(/images/pics4.png);
+}
+
+.video-frame {
+    width: 35%;
+    padding: 1% 10% 0% 0%;
+    background-color: black;
+}
+
+.extra-pics {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;   
+}
+
+.extra-pics img {
+    padding: 3%;
+    justify-content: space-around;
+    max-width: 500px;
+}
+
+/* Register */
+
+.register-grid {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    background-image: url(/images/register1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    max-height: 2000px;
+}
+
+.discord {
+    grid-row: 3 / span 3;
+    grid-column: 1 / span 4;
+    padding: 2%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+}
+
+.discord h2 {
+    margin-top: 0;
+}
+
+.discord a {
+    color: goldenrod;
+    font-size: 2.5rem;
+}
+
+.discord a:hover {
+    color: seagreen;
+}
+
+.bottom-anchor {
+    margin-top: 20%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 1% 0 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.footer a {
+    color: black;
+    font-weight: bolder;
+}
+
+#previous {
+    padding-right: 20rem;
+}
+
+#next {
+    padding-left: 20rem;   
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 2450px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 1680px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .container-top {
+        min-height: 1000px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    /* Index */
+    .container-main {
+        margin: 0% 0% 1% 0%;
+    }
+    .container-top {
+        margin: 5% 5% 0% 5%;
+        max-height: 950px;
+        min-height: 650px;
+    }
+    .reg-description {
+        font-size: 2.5rem;
+        margin: 0% 5% 0% 5%;
+    }
+    .container-bottom img {
+        max-height: 250px;
+    }
+    /* Register */
+    .discord {
+        grid-row: 3 / span 3;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .info-box {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .discord a {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .nav-items {
+        display: none;
+    }
+    .logo {
+        margin-right: 0;
+        transition: margin-right 3s;
+    }
+    ul.menu {
+        margin-right: 0;
+    }
+    .register-grid {
+        display: flex;
+    }
+    #previous {
+        display: none;
+    }
+    #next {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .nav {
+        background-color: white;
+    }
+    /* Index */
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .container-top {
+        min-height: 300px;
+    }
+    .reg-description {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+    .container-bottom img {
+        max-height: 100px;
+    }
+    /* Events */
+    .container-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .info-box {
+        margin-top: 20%;
+        border-radius: 0%;
+    }
+    .info-box p {
+        font-size: 1.0rem;
+    }
+    #top-left {
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    #top-right {
+        margin-right: 0%;
+        margin-top: 10%;
+    }
+    /* History */
+    .image-text {
+        font-size: 0.75rem;
+    }
+    /* pics&vids */
+    .container-vids-main {
+        min-height: 0px;
+        max-height: 250px;
+    }
+    iframe {
+        min-height: 0px;
+        max-height: 80px;
+    }
+    #link5 a {
+        font-size: 1.5rem;
+    }
+    /* Register */
+    .discord {
+        font-size: 1.25rem;
+        background: #1e130c;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #9a8478, #1e130c);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #9a8478, #1e130c);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .discord a {
+        font-size: 1.5rem;
+    }
+}
